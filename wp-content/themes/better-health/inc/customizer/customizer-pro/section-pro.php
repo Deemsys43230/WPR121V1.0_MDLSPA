@@ -57,7 +57,7 @@ class Better_Health_Customize_Section_Pro extends WP_Customize_Section {
 	 * @access public
 	 * @return void
 	 */
-	protected function render_template() { ?>
+	/*protected function render_template() { ?>
 
 		<li id="accordion-section-{{ data.id }}" class="accordion-section control-section control-section-{{ data.type }} cannot-expand">
 
@@ -69,5 +69,5 @@ class Better_Health_Customize_Section_Pro extends WP_Customize_Section {
 				<# } #>
 			</h3>
 		</li>
-	<?php }
+	<?php }*/
 }

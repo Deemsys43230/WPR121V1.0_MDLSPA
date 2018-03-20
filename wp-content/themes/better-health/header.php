@@ -111,7 +111,7 @@ $appointment_short_code = better_health_get_option('better_health_appointment_sh
             </div>
         </nav><!-- #site-navigation -->
     </header><!-- #masthead -->
-    <div id="menu-bar" class="main-menu">
+	<div id="menu-bar" class="main-menu">
         <div class="container">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeIn">
                 <?php
@@ -160,6 +160,7 @@ $appointment_short_code = better_health_get_option('better_health_appointment_sh
 
         </div>
     </div>
+    
 <!-- 
 	
  

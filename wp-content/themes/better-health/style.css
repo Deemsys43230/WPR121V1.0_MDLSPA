@@ -177,7 +177,9 @@ a {
     color: royalblue;
 }
 
-
+a:visited {
+    color: #f65486;
+}
 a:hover,
 a:focus,
 a:active {
@@ -193,7 +195,12 @@ a:active {
     outline: 0;
 }
 
-
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current-menu-ancestor > a {
+    color: #7fa200;
+}
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -1000,9 +1007,6 @@ li.current-menu-item a {color:#00AEF0;}
     float: left;
     padding: 15px 0;
 }
-.site-description {
-    margin-bottom: 0;
-}
 .better-health-info {
     float: right;
 }
@@ -1034,7 +1038,7 @@ li.current-menu-item a {color:#00AEF0;}
 }
 .main-menu .nav>li>a:focus, 
 .main-menu .nav>li>a:hover {
-    background-color: transparent;
+    background-color: #25262a;
 }
 .current-menu-item a{
     color: #00aef0;
@@ -1066,9 +1070,9 @@ li.current-menu-item a {color:#00AEF0;}
     background: transparent !important;
 }
 
-.navbar-menu .navbar-right .dropdown-menu {
+/* .navbar-menu .navbar-right .dropdown-menu {
     left: 0!important;
-}
+} */
 .dropdown-menu{
     padding: 0;
     border: 0;
@@ -3344,9 +3348,9 @@ a.contact-us:hover {
     width: 33%;
   }  
   
-  .navbar-right .dropdown-menu {
+/*   .navbar-right .dropdown-menu {
     left: 0 !important;
-  }
+  } */
   aside {
     float: none;
   } 

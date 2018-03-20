@@ -68,7 +68,6 @@ $contact_subtitle = better_health_get_option('better_health_contact_subtitle_tex
           <div class="section-contact-full clearfix">
               <div class="col-xs-12 col-sm-3 col-md-2 hidden-xs">
                   <div class="contact-link-img">
-                     <img src="<?php echo esc_url($image) ?>" alt="">
                   </div>
               </div>
               <div class="col-xs-12 col-sm-9 col-md-6">
@@ -91,51 +90,7 @@ $contact_subtitle = better_health_get_option('better_health_contact_subtitle_tex
 
   ?>
   <section id="footer-top" class="footer-top">
-      <div class="container footer-widget-top">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="top-widget-contacts">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4 widget">
-                       
-                       <div class="widget-contact-icon pull-left">
-                          <i class="fa  <?php echo esc_attr($address_icon); ?>" aria-hidden="true"></i>
-                        </div>
-                       
-                        <div class="widget-contact-info">
-                          <p class="top-widget-contacts-title"><?php echo esc_html($address_label); ?></p>
-                          <p class="top-widget-contacts-content"><?php echo esc_html($address); ?></p>
-                        </div>
-
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4 widget">
-                        <div class="widget-contact-icon pull-left">
-                          <i class="fa <?php echo esc_attr($email_icon); ?>" aria-hidden="true"></i>
-                        </div>
-                        
-                        <div class="widget-contact-info">
-                          <p class="top-widget-contacts-title"><?php echo esc_html($email_label); ?></p>
-                          <p class="top-widget-contacts-content"><?php echo esc_html($email); ?></p>
-                        </div>
-
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4 widget">
-                       
-                        <div class="widget-contact-icon pull-left">
-                           <i class="fa <?php echo esc_attr($phone_number_icon); ?>" aria-hidden="true"></i>
-                        </div>
-
-                        <div class="widget-contact-info">
-                           <p class="top-widget-contacts-title"><?php echo esc_html($phone_number_label); ?></p>
-                           <p class="top-widget-contacts-content"><?php echo esc_html($phone_number); ?></p>
-                        </div>
-
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
+    
       <?php
   
         if (is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_sidebar('footer-3') || is_active_sidebar('footer-4'))

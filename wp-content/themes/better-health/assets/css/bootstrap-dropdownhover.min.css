@@ -23,7 +23,7 @@
 	top:-1px
 }
 .dropdown-menu-right .dropdown-menu, .navbar-right .dropdown-menu .dropdown-menu, .pull-right .dropdown-menu .dropdown-menu {
-	left:auto;
+/*	left:auto;*/
 	right:100%
 }
 .dropdown-menu.animated {
