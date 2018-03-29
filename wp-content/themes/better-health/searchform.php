@@ -8,7 +8,7 @@
 global  $better_health_placeholder_option;
 ?>
 <div class="search-block">
-    <form action="<?php echo esc_url( home_url() )?>" class="searchform search-form" id="searchform" method="get" role="search">
+    <form action="<?php echo esc_url( home_url().'category/recent-post/' )?>" class="searchform search-form" id="searchform" method="get" role="search">
         <div>
             <label for="menu-search" class="screen-reader-text"></label>
             <?php
