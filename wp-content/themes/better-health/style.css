@@ -674,7 +674,7 @@ body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif; 
+   font-family: 'Roboto', sans-serif; 
     font-weight: 400;
     color:#777777;
 }
@@ -900,7 +900,7 @@ li.current-menu-item a {color:#00AEF0;}
 }
 .social-links  ul li a:before {
     content: "\f0c1";
-    font-family: FontAwesome, sans-serif;
+     font-family: FontAwesome, sans-serif;
     color: #fff;
     font-size: 16px;
     line-height: 15px;
@@ -1061,7 +1061,7 @@ li.current-menu-item a {color:#00AEF0;}
     position: fixed;
 }
 .navbar-nav > li > a {
-    font-family: 'Poppins', Roboto;
+       font-family: 'Poppins', Roboto;
     color: #222222;
     font-size: 16px;
 }
@@ -1162,9 +1162,9 @@ p.search-btn {
     margin: 0;
     padding: 8px 10px;
 }
-.search p {
+/*.search p {
     color: #fff;
-}
+}*/
 
 /************************************
 05)Banner
@@ -1598,10 +1598,7 @@ section#section1 .section-1-box {
     .main-menu .navbar-collapse {
         padding: 0 15px !important;
     }
-
-    .search {
-        display: none;
-    }   
+  
 }
 
 /************************************

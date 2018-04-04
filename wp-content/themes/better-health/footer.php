@@ -66,19 +66,20 @@ $contact_subtitle = better_health_get_option('better_health_contact_subtitle_tex
       <div class="container">
         <div class="row">
           <div class="section-contact-full clearfix">
-              <div class="col-xs-12 col-sm-3 col-md-2 hidden-xs">
+              <div class="col-xs-12 col-sm-2 col-md-2 hidden-xs">
                   <div class="contact-link-img">
+                     <img src="<?php echo esc_url($image) ?>" alt="">
                   </div>
               </div>
-              <div class="col-xs-12 col-sm-9 col-md-6">
+              <div class="col-xs-12 col-sm-8 col-md-8">
                   <div class="contact-link-desc">
                      <h5><?php echo esc_html($contact_title); ?></h5>
                      <span><?php echo esc_html($contact_subtitle); ?></span>
                   </div>
               </div>
-            <div class="col-xs-12 col-sm-9 col-md-4">
+            <div class="col-xs-12 col-sm-2 col-md-2">
                 <div class="contact-link-btn">
-                     <a href="contact-us" class="contact-us"><?php echo esc_html($button_text); ?></a>
+                     <a href="<?php echo home_url() ?>/contact/" class="contact-us"><?php echo esc_html($button_text); ?></a>
                 </div>
             </div>
           </div>
@@ -93,11 +94,11 @@ $contact_subtitle = better_health_get_option('better_health_contact_subtitle_tex
     
       <?php
   
-        if (is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_sidebar('footer-3') || is_active_sidebar('footer-4'))
+        if (is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_sidebar('footer-3'))
         {
             
             $count = 0;
-            for ( $i = 1; $i <= 4; $i++ )
+            for ( $i = 1; $i <= 3; $i++ )
                 {
                 if ( is_active_sidebar( 'footer-'. $i ) )
                       {
@@ -105,12 +106,12 @@ $contact_subtitle = better_health_get_option('better_health_contact_subtitle_tex
                       }
               }
             $column = 3;
-            if( $count == 4 ) 
+            /*if( $count == 4 ) 
             {
                 $column = 3;  
              
-            }
-            elseif( $count == 3)
+            }*/
+            if( $count == 3)
             {
                   $column=4;
             }
@@ -127,12 +128,12 @@ $contact_subtitle = better_health_get_option('better_health_contact_subtitle_tex
                 <div class="row">
                         <?php
                             $column_class = 'widget-column footer-active-' . absint( $column_count );
-                              for ( $i = 1; $i <= 4 ; $i++ )
+                              for ( $i = 1; $i <= 3 ; $i++ )
                               {
                                   if ( is_active_sidebar( 'footer-' . $i ) )
                                   {
                           ?> 
-                                      <div class="col-md-<?php echo  absint( $column ); ?>">
+                                      <div class="col-md-<?php echo  absint( $column ); ?> col-sm-<?php echo  absint( $column ); ?>">
                                           <div class="footer-top-box wow fadeInUp">
                                               <?php dynamic_sidebar( 'footer-' . $i ); ?>
                                           </div>
@@ -143,13 +144,39 @@ $contact_subtitle = better_health_get_option('better_health_contact_subtitle_tex
                               }     ?>  
                 </div>
             </div>
+    <?php } ?>  
+     <?php
+  
+        if (is_active_sidebar('footer-4'))
+        {
+            $count = 0;
+            $i = 4;
+            
+?>
+            <div class="container">
+                <div class="row">
+                        <?php
+                            $column_class = 'widget-column footer-active-' . absint( $column_count );
+                                  if ( is_active_sidebar( 'footer-' . $i ) )
+                                  {
+                          ?> 
+                                      <div class="col-md-12 col-sm-12">
+                                          <div class="footer-top-box wow fadeInUp">
+                                              <?php dynamic_sidebar( 'footer-' . $i ); ?>
+                                          </div>
+                      
+                                      </div>
+                      <?php       } 
+                       ?>  
+                </div>
+            </div>
     <?php } ?>     
   </section>
 
   <section id="footer-bottom" class="footer-bottom">
       <div class="container">
           <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-12 col-sm-12">
                   <div class="copyright">
                     <?php
                        // Displaying Footer copyright Text
