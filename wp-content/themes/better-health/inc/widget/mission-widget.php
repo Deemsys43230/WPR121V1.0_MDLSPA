@@ -60,7 +60,7 @@ if (!class_exists('Better_Health_Our_mission_Widget')) {
                                         echo "6";
                                     } ?>">
                                         <div class="section-5-box-text-cont wow fadeInRight">
-                                            <h2><?php the_title(); ?></h2>
+                                            <h1><?php the_title(); ?></h1>
                                             <p><?php echo esc_html( wp_trim_words(get_the_content(), $limit_character) ); ?></p>
                                             <?php
                                             if (!empty( $button_text ) && !empty($button_url) ) {
